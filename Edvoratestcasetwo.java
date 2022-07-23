@@ -18,13 +18,20 @@ public class Edvoratestcasetwo {
 		WebElement register = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/p[2]/button"));
 		register.click();
 		
+        try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+        
 		WebElement reguname = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/div[1]/div/input"));
-        reguname.sendKeys("Prav");
+        reguname.sendKeys("Pbbv");
         
-        WebElement regpass = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/main/div/div/div[2]/div/input"));
-        regpass.sendKeys("pass");
+        WebElement regpass = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/div[2]/div/input"));
+        regpass.sendKeys("ptts");
         
-        WebElement Submit = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/main/div/div/button"));
+        WebElement Submit = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/button"));
         Submit.click();
         
         try {
