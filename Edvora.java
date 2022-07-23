@@ -16,9 +16,6 @@ public class Edvora {
 		
 		driver.get("https://testing-assessment-foh15kew9-edvora.vercel.app/");
 		
-		WebElement register = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/p[2]/button"));
-		register.click();
-		
 		WebElement reguname = driver.findElement(By.xpath("//*[@id=\'__next\']/div/main/div/div/div[1]/div/input"));
         reguname.sendKeys("Prav");
         
